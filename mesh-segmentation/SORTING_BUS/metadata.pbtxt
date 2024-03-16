@@ -1,0 +1,35 @@
+model {
+  file: "model.sdf"
+}
+name: "SORTING_BUS"
+description: "SORTING BUS\nThe shape sorting bus contains shapes that when sorted correctly will fit into the bus.  Pull the sign on the bus and all the pieces will slide out."
+version: 1
+authors {
+  name: "Google"
+  email: "scanned-objects@google.com"
+}
+legal {
+  copyright: "Copyright 2020 Google LLC."
+  license: "Creative Commons Attribution 4.0 International"
+}
+annotations {
+  key: "brand"
+  value: "PlanToys"
+}
+annotations {
+  key: "mpn"
+  value: "5121"
+}
+annotations {
+  key: "sku"
+  value: "0512101"
+}
+compatibilities {
+  name: "Gazebo"
+  version {
+    major: 11
+  }
+}
+categories {
+  first: "Toys"
+}

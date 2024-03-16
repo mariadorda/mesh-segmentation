@@ -1,0 +1,29 @@
+
+import bpy
+
+# Define los parámetros que deseas pasar al operador
+params = {
+    'action': 'assignMaterials',
+    'k': 6,
+    'delta': 0.03,
+    'eta': 0.15,
+    'ev_method': 'sparse',
+    'kmeans_init': 'liu_zhang'
+}
+
+# Llama al operador con los parámetros definidos
+bpy.ops.mesh.mesh_segmentation(**params)
+
+
+# Define la ruta donde se guardará la imagen
+ruta_imagen = "C:\\Users\\maria\\Downloads\\mesh-segmentation\\imagen.png"
+
+# Configura la resolución de la imagen
+bpy.context.scene.render.resolution_x = 1920  # Ancho de la imagen
+bpy.context.scene.render.resolution_y = 1080  # Alto de la imagen
+
+# Renderiza la imagen
+bpy.ops.render.render(write_still=True)
+
+# Guarda la imagen en la ubicación especificada
+bpy.data.images['Render Result'].save_render(ruta_imagen)

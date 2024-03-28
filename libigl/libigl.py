@@ -52,7 +52,9 @@ def main(mesh_dir):
     ax.set_zlabel('Z')
     ax.set_title('Mesh Segmentation')
 
-    plt.show()
+    # plt.show()
+    # Save the plot as an image file
+    plt.savefig('/app/result')
 
 if __name__ == "__main__":
     # Create ArgumentParser object

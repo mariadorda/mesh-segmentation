@@ -1,0 +1,5 @@
+numpy
+scipy
+
+# Install CGAL Python bindings from the specified git repository
+git+https://bitbucket.org/taucgl/cgal-python-bindings/src/master/

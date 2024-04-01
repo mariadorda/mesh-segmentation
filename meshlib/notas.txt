@@ -1,0 +1,17 @@
+con CGAL la instalación es ... mínimo jodida, además los bindings no abarcan ninguna librería que me ayude a hacer mesh segmentation
+
+En el paquete Geometry Processing está Triangulated Surface Mesh Segmentation, pero no está incluída en los bindings para python
+
+https://github.com/CGAL/cgal-swig-bindings/wiki/Package_wrappers_available
+
+En Polygon Mesh Processing hay supuestamente una función que se llama region_growing_of_planes_on_faces() que serviría para hacer mesh segmentation pero tampoco está en los bindings
+
+O al menos no estoy llamándola correctamente 
+
+import numpy as np
+import CGAL.CGAL_Polyhedron_3 as polyhedron
+import CGAL.CGAL_RegionGrowingOnFaces as region_growing
+
+para meshlib ponele que tuve avances pero no encuentro todavía la forma de hacer mesh segmentation
+
+https://meshlib.meshinspector.com/documentation/group__MeshSegmentationGroup.html
